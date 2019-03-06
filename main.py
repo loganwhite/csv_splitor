@@ -18,7 +18,7 @@ def split_csv(filename):
         csvfile.close()
 
     for key, value in dic.iteritems():
-        with open(key + '.csv', 'a') as out_file:
+        with open(key + '.csv', 'w') as out_file:
             for item in value:
                 out_file.write("%s" % item)
             out_file.close()
